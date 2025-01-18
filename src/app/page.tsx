@@ -1,13 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import FileTreeVisualizer from '@/components/FileTreeVisualizer'
 
 function page() {
   return (
     <>
       <div>
-        <Header />
-        <Footer />
+        <FileTreeVisualizer />
       </div>
     </>
   )

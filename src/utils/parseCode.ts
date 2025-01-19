@@ -1,7 +1,10 @@
-export const analyzeCode = (code: string): object => {
-  const lines = code.split("\n").length;
-  const words = code.split(/\s+/).length;
-  const functions = (code.match(/function|=>/g) || []).length;
+import { CodeAnalyzerResult } from "@/types";
+
+export const analyzeCode = (code: CodeAnalyzerResult): object => {
+  const codeString = String(code);
+  const lines = codeString.split("\n").length;
+  const words = codeString.split(/\s+/).length;
+  const functions = (codeString.match(/function|=>/g) || []).length;
 
   return {
     lines,

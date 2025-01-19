@@ -1,14 +1,16 @@
 "use client"
 import React, { useState } from "react";
 import { analyzeCode } from "@/utils/parseCode";
+import { CodeAnalyzerResult } from "@/types";
 
 const CodeAnalyzer = () => {
   const [code, setCode] = useState<string>("");
-  const [analysisResult, setAnalysisResult] = useState<{
-    lines: number;
-    words: number;
-    functions: number;
-  } | null>(null);
+  const [analysisResult, setAnalysisResult] = useState<CodeAnalyzerResult>({
+    lines: 0,
+    words: 0,
+    functions: 0,
+    split: (arg0: string) => { return []; }
+  });
 
   const handleAnalyze = () => {
     const result = analyzeCode(code);

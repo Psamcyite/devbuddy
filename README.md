@@ -66,20 +66,15 @@ Follow these steps to set up the project locally.
 
 2. Install dependencies:  
    ```bash
-   pnpm install
+   yarn install
    ```
 
-3. Create a `.env` file:  
+3. Start the development server:  
    ```bash
-   NEXT_PUBLIC_OPENAI_API_KEY=your_openai_api_key
+   yarn dev
    ```
 
-4. Start the development server:  
-   ```bash
-   pnpm dev
-   ```
-
-5. Visit the app at [http://localhost:3000](http://localhost:3000).
+4. Visit the app at [http://localhost:3000](http://localhost:3000).
 
 ---
 

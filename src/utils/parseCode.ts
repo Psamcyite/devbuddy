@@ -1,14 +1,11 @@
-import { CodeAnalyzerResult } from "@/types";
+import { CodeAnalyzerResult } from "../types";
 
-export const analyzeCode = (code: CodeAnalyzerResult): object => {
-  const codeString = String(code);
-  const lines = codeString.split("\n").length;
-  const words = codeString.split(/\s+/).length;
-  const functions = (codeString.match(/function|=>/g) || []).length;
-
+export const analyzeCode = (code: string): CodeAnalyzerResult => {
+  // Return a valid CodeAnalyzerResult object
   return {
-    lines,
-    words,
-    functions,
+    lines: code.split("\n").length,
+    words: code.split(/\s+/).length,
+    functions: (code.match(/function\s/g) || []).length,
+    split: (arg0: string) => code.split(arg0),
   };
 };

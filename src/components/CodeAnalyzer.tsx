@@ -13,7 +13,7 @@ const CodeAnalyzer = () => {
   });
 
   const handleAnalyze = () => {
-    const result = analyzeCode(code);
+    const result: CodeAnalyzerResult = analyzeCode(code);
     setAnalysisResult(result);
   };
 

@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DevBuddy",
   description: "All-in-one developer productivity assistant, which simplifies and automates repetitive tasks, helping developers focus on writing great code!",
+  openGraph: {
+    title: "DevBuddy",
+    description: "All-in-one developer productivity assistant, which simplifies and automates repetitive tasks, helping developers focus on writing great code!",
+    images: ["/assets/logo/devbuddy.png"],
+  },
 };
 
 export default function RootLayout({

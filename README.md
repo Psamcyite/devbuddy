@@ -1,6 +1,3 @@
-
----
-
 # **DevBuddy**
 
 Your all-in-one developer productivity assistant. 🚀  
@@ -24,7 +21,7 @@ Your all-in-one developer productivity assistant. 🚀
 
 ## **Description**
 
-**DevBuddy** is a developer-centric web app designed to boost productivity. It provides tools to visualize file structures, perform static code analysis, generate README templates, and even integrate AI-powered code reviews. Whether you're a beginner or an experienced developer, DevBuddy has something to streamline your workflow.
+**DevBuddy** is a developer-centric web app designed to boost productivity. It provides tools to visualize file structures, perform static code analysis, and generate README templates. Whether you're a beginner or an experienced developer, DevBuddy has something to streamline your workflow.
 
 ---
 
@@ -39,9 +36,6 @@ Static code analysis to identify unused imports, overly long functions, and pote
 ✅ **README Generator**  
 Create professional-looking README templates based on your project's `package.json`.  
 
-✅ **AI-Powered Suggestions**  
-Leverage OpenAI to get tailored feedback and suggestions for your code.  
-
 ---
 
 ## **Tech Stack**
@@ -50,8 +44,6 @@ Leverage OpenAI to get tailored feedback and suggestions for your code.
 - **Language**: TypeScript  
 - **Styling**: Tailwind CSS  
 - **Animation**: Framer Motion  
-- **AI Integration**: OpenAI API  
-- **Code Parsing**: Babel  
 
 ---
 
@@ -63,7 +55,6 @@ Follow these steps to set up the project locally.
 
 - Node.js (v18 or higher)  
 - npm, yarn, or pnpm (preferably pnpm)  
-- OpenAI API Key ([Get one here](https://platform.openai.com/signup/))  
 
 ### **Installation**
 
@@ -72,27 +63,6 @@ Follow these steps to set up the project locally.
    git clone https://github.com/Psamcyite/devbuddy.git
    cd devbuddy
    ```
-
-Your all-in-one developer productivity assistant. 🚀  
-"DevBuddy" simplifies and automates repetitive tasks, helping developers focus on writing great code!
-
----
-
-## **Table of Contents**
-
-1. [Description](#description)  
-2. [Features](#features)  
-3. [Tech Stack](#tech-stack)  
-4. [Getting Started](#getting-started)  
-5. [Usage](#usage)  
-6. [Contributing](#contributing)  
-7. [License](#license)
-
----
-
-## **Description**
-
-**Dev
 
 2. Install dependencies:  
    ```bash
@@ -116,46 +86,61 @@ Your all-in-one developer productivity assistant. 🚀
 ## **Usage**
 
 ### **1. File Structure Visualizer**
-Upload your project folder and view its structure in a collapsible tree format.  
+Upload your project (zip) folder and view its structure in a collapsible tree format.  
 
 ### **2. Code Review Assistant**
 Paste your code into the editor, and DevBuddy will analyze and suggest improvements.  
 
 ### **3. README Generator**
-Provide your `package.json` content to generate a customizable README template.  
-
-### **4. AI-Powered Suggestions**
-Submit your code to receive AI-based suggestions for better structure and readability.  
+Provide your content to generate a customizable README template.  
 
 ---
 
 ## **Directory Structure**
 
 ```bash
-src/
-├── components/
-│   ├── FileTreeVisualizer.tsx
-│   ├── CodeAnalyzer.tsx
-│   ├── ReadmeGenerator.tsx
-│   ├── AiSuggestions.tsx
-│   ├── Layout.tsx
-├── pages/
-│   ├── index.tsx
-│   ├── api/
-│   │   ├── analyze.ts
-│   │   ├── generateReadme.ts
-│   │   ├── suggest.ts
-├── styles/
-│   ├── globals.css
-│   ├── tailwind.css
-├── utils/
-│   ├── parseCode.ts
-│   ├── fileTree.ts
-├── types/
-│   ├── index.ts
+challenge/devbuddy/
+├── next/
+├── node_modules/
+├── public/
+│   └── assets/logo/
+│       ├── buddy.png
+│       └── buddy.svg
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── CodeAnalyzer.tsx
+│   │   ├── File Tree Visualizer.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   └── ReadmeGenerator.tsx
+│   ├── lib/
+│   ├── types/
+│   │   └── index.ts
+│   └── utils/
+│       ├── fileTree.ts
+│       ├── generateReadme.ts
+│       └── parseCode.ts
+├── .gitignore
+├── components.json
+├── eslint.config.mjs
+├── LICENSE
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.json
+└── yarn.lock
 ```
 
 ---
+
 ## **Contributing**
 
 Contributions are welcome! 🎉  
@@ -185,6 +170,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## **Acknowledgments**
 
-Thanks to the GitHub Copilot 1-Day Build Challenge for inspiring this project!  
+Thanks to the GitHub Copilot 1-Day Build Challenge for inspiring this project! 🚀
 
 ---
